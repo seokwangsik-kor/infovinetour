@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.NomalAlertFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="46.5dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:gravity="center"
+                android:text="본인 확인"
+                android:textColor="#171717"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="11.5dp"
+                android:background="#f2f3f4" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <LinearLayout
+                    android:id="@+id/alert_user_phone_number_layer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/apple_sd_gothic_neo_m"
+                        android:gravity="center|left"
+                        android:text="회원님의 휴대폰 번호는"
+                        android:textColor="#171717"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/alert_user_phone_number_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/apple_sd_gothic_neo_m"
+                            android:gravity="center|left"
+                            android:text="000-0000-0000"
+                            android:textColor="@color/main_color"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/apple_sd_gothic_neo_m"
+                            android:gravity="center|left"
+                            android:text="입니다."
+                            android:textColor="#171717"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/apple_sd_gothic_neo_m"
+                        android:gravity="center|left"
+                        android:text="이대로 진행 하시겠습니까?"
+                        android:textColor="#171717"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/alert_user_phone_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/apple_sd_gothic_neo_m"
+                    android:gravity="center|left"
+                    android:text="등록된 휴대폰 번호가 없습니다.\n\n견적을 받아보기 위해\n휴대폰 본인 인증을 해주세요."
+                    android:textColor="#171717"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"/>
+            </FrameLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:gravity="center"
+                android:text="* 연락 받으실 번호로 본인 확인을 진행해 주세요."
+                android:textColor="#4e5867"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="#f2f3f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="39.5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/alert_user_phone_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/update_cancle_btn"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/alert_user_phone_close_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="@font/apple_sd_gothic_neo_m"
+                        android:gravity="center_horizontal"
+                        android:text="닫기"
+                        android:textColor="#4e5867"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="40dp" />
+
+                <LinearLayout
+                    android:id="@+id/alert_user_phone_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/update_btn"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/alert_user_phone_confirm_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="@font/apple_sd_gothic_neo_m"
+                        android:gravity="center_horizontal"
+                        android:text="휴대폰 본인 인증"
+                        android:textColor="#ffffff"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

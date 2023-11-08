@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "199643168004",
+    "project_id": "tour-b7a06",
+    "storage_bucket": "tour-b7a06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199643168004:android:4a7db11b03c9774173a451",
+        "android_client_info": {
+          "package_name": "com.infovine.tour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199643168004-gd846sl3vmk9vb4tv85ahm19hoe616vr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn8OFnO9t4jwRqJTVjXCagMkhPSLnXaP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199643168004-gd846sl3vmk9vb4tv85ahm19hoe616vr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "199643168004-m7bbos892dmhcvr794f86k07aao4p8kq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.infovine.tour"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

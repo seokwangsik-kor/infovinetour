@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".activity.TemrsActivity">
+
+    <LinearLayout
+        android:id="@+id/layer_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/pnum_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/s_core_dream_6"
+            android:gravity="center"
+            android:text="본인 확인인증"
+            android:textColor="#4f5664"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_btn_back"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/layer_login_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/s_core_dream_6"
+        android:lineSpacingExtra="6sp"
+        android:text="고객님 성함과 휴대폰 번호를\n인증해주세요"
+        android:textColor="#171717"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layer_login_title" />
+
+    <RelativeLayout
+        android:id="@+id/pnum_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/layer_login_text1"
+        app:layout_constraintTop_toBottomOf="@+id/layer_login_text1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/s_core_dream_4"
+            android:text="이름"
+            android:textColor="#171717"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/pnum_name"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/title4"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/gray_small_round_background"
+            android:fontFamily="@font/apple_sd_gothic_neo_m"
+            android:hint="이름을 입력해주세요."
+            android:lineSpacingExtra="3sp"
+            android:maxLength="11"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textColor="#4f5664"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vender_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/pnum_name_layout"
+        app:layout_constraintTop_toBottomOf="@+id/pnum_name_layout">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/s_core_dream_4"
+            android:text="통신사"
+            android:textColor="#4f5664"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/vender_tv"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/title1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/gray_small_round_background"
+            android:fontFamily="@font/apple_sd_gothic_neo_m"
+            android:gravity="center|left"
+            android:hint="선택해주세요."
+            android:lineSpacingExtra="3sp"
+            android:paddingLeft="15dp"
+            android:text=""
+            android:textColor="#4f5664"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/vender_tv"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/btn_down_s" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phonenum_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/vender_layout"
+        app:layout_constraintTop_toBottomOf="@+id/vender_layout">
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/s_core_dream_4"
+            android:text="휴대폰 번호"
+            android:textColor="#171717"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/phonenum_tv"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/title2"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/gray_small_round_background"
+            android:fontFamily="@font/s_core_dream_5_medium"
+            android:hint="'-'를 빼고 입력해주세요."
+            android:inputType="number"
+            android:lineSpacingExtra="3sp"
+            android:maxLength="11"
+            android:paddingLeft="15dp"
+            android:textColor="#4f5664"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/certifynum_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/phonenum_layout"
+        app:layout_constraintTop_toBottomOf="@+id/phonenum_layout">
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/s_core_dream_4"
+            android:text="인증번호"
+            android:textColor="#171717"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title3"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/gray_small_round_background"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/certifynum_tv"
+                style="@style/editText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toLeftOf="@+id/count"
+                android:layout_weight="1"
+                android:background="@drawable/gray_small_round_background"
+                android:fontFamily="@font/s_core_dream_5_medium"
+                android:hint="번호를 입력해주세요."
+                android:inputType="number"
+                android:lineSpacingExtra="3sp"
+                android:maxLength="11"
+                android:paddingLeft="15dp"
+                android:textColor="#4f5664"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="115dp"
+                android:background="#f6f6f6"
+                android:fontFamily="@font/s_core_dream_4"
+                android:gravity="center"
+                android:paddingRight="15dp"
+                android:text=""
+                android:textColor="#0055ff"
+                android:textSize="13dp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/send_certify_num"
+                android:layout_width="119dp"
+                android:layout_height="48dp"
+                android:layout_alignTop="@id/certifynum_tv"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="@drawable/half_round_green_background"
+                android:fontFamily="@font/s_core_dream_5_medium"
+                android:gravity="center"
+                android:text="인증번호 요청"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+        </FrameLayout>
+        <!--<ImageView
+            android:id="@+id/send_certify_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/certifynum_tv"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_sned_result_22" />-->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/timer_end_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/s_core_dream_4"
+        android:text="인증번호 확인"
+        android:textColor="#0055ff"
+        android:textSize="13dp"
+        android:textStyle="normal"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/certifynum_layout" />
+
+    <TextView
+        android:id="@+id/timer_end_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/s_core_dream_4"
+        android:text="인증번호 확인시간 초과"
+        android:textColor="#ff0000"
+        android:textSize="13dp"
+        android:textStyle="normal"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/certifynum_layout" />
+
+    <ImageView
+        android:id="@+id/error_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/msg_1"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/certifynum_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/timer_end_ok"
+        app:layout_constraintTop_toBottomOf="@+id/timer_end_ok">
+
+        <LinearLayout
+            android:id="@+id/phonenum_temrs_check_layer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/phonenum_temrs_check"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/terms_check_btn"
+                android:button="@android:color/transparent"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/s_core_dream_5_medium"
+                android:text="제 3자 정보제공  동의"
+                android:textColor="#171717"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phonenum_temrs_layer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/s_core_dream_4"
+                android:text="약관내용 확인"
+                android:textColor="#171717"
+                android:textSize="13dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/btn_more_s" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/join_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/check_light_gray_green"
+            android:button="@android:color/transparent"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/join_btn_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/s_core_dream_6"
+            android:text="본인확인 완료"
+            android:textColor="#bebebe"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

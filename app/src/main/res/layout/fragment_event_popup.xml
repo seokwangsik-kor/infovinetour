@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.EventPopupFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="155dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/event_popup_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/event_popup_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    app:tabBackground="@drawable/tab_dot"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ededed" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50.5dp">
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/event_popup_check"-->
+                <!--                    android:layout_width="20dp"-->
+                <!--                    android:layout_height="20dp"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:layout_marginLeft="20dp"-->
+                <!--                    android:layout_marginRight="6dp"-->
+                <!--                    android:src="@drawable/checkbox_off" />-->
+
+                <ImageView
+                    android:id="@+id/event_popup_check"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"
+                    android:layout_marginRight="6dp"
+                    android:background="#ffffff"
+                    android:src="@drawable/checkbox_off" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/event_popup_check"
+                    android:id="@+id/event_popup_check_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:layout_marginTop="-1dp"
+                    android:fontFamily="@font/apple_sd_gothic_neo_m"
+                    android:text="오늘 그만보기"
+                    android:textColor="#4e5867"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:background="#ffffff"
+                    android:id="@+id/event_popup_close"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/apple_sd_gothic_neo_m"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="닫기"
+                    android:textColor="#171717"
+                    android:textSize="13dp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

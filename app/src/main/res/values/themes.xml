@@ -1,0 +1,121 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!--<style name="Theme.Infovinetour" parent="Theme.AppCompat.Light">-->
+    <style name="Theme.Infovinetour" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#f5f5f5</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="editText" parent="Theme.MaterialComponents.Light">
+        <item name="android:editTextColor">#4f5664</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/install_bg</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="DialogFragmentTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowFullscreen">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/permisson_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:statusBarColor">#f5f5f5</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/tel_background</item>
+    </style>
+
+    <style name="CalendarTheme" parent="Theme.AppCompat.Light">
+        <item name="fontFamily">@font/apple_sd_gothic_neo_heavy</item>
+    </style>
+    <!--<style name="DatePickersTheme" parent="Theme.AppCompat.Light">-->
+    <style name="DatePickersTheme" parent="Theme.MaterialComponents.Light">
+        <!--<item name="android:statusBarColor">#f5f5f5</item>-->
+        <!--<item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="windowNoTitle">true</item>-->
+
+        <!--<item name="colorPrimary">#f5f5f5</item>-->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <!-- 상단 Title 배경색 -->
+        <item name="colorAccent">#f5f5f5</item>
+        <!-- 선택한 날짜 배경 색 -->
+        <item name="colorControlActivated">#e0ffcc</item>
+        <!-- 폰트 변환 -->
+        <item name="fontFamily">@font/apple_sd_gothic_neo_heavy</item>
+        <!-- Highlight item color-->
+        <item name="colorControlHighlight">@color/main_color</item>
+        <!--Calender Background color -->
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <!--<item name="materialCalendarFullscreenTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen</item>-->
+        <item name="materialCalendarTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar</item>
+
+
+        <item name="materialCalendarHeaderLayout">@style/MaterialCalendarTheme_Header</item>
+        <!--<item name="materialCalendarHeaderDivider">@style/MaterialCalendarTheme_Header</item>-->
+
+        <!--<item name="materialCalendarFullscreenTheme">@style/CustomThemeOverlay_MaterialCalendar_Fullscreen</item>-->
+        <item name="materialCalendarHeaderToggleButton">@style/CalendarToggleButton</item>
+    </style>
+
+    <!--<style name="MaterialCalendarTheme_Header" parent="@style/Widget.Material3.MaterialCalendar">-->
+    <style name="MaterialCalendarTheme_Header" parent="@style/Widget.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarHeaderLayout">@style/HeaderTitle_Hide</item>
+    </style>
+
+    <!--<style name="HeaderTitle_Hide" parent="@style/Widget.MaterialComponents.MaterialDivider">-->
+    <style name="HeaderTitle_Hide" parent="@style/Widget.MaterialComponents.MaterialCalendar">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="CustomThemeOverlay_MaterialCalendar_Fullscreen"  parent="@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen">
+        <item name="materialCalendarStyle">@style/Custom_MaterialCalendar.Fullscreen</item>
+    </style>
+
+    <style name="Custom_MaterialCalendar.Fullscreen"
+        parent="@style/Widget.MaterialComponents.MaterialCalendar.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="CalendarToggleButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Search_Tab_TextSize" parent="TextAppearance.Design.Tab" >
+        <item name="android:textSize">15dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+
+</resources>

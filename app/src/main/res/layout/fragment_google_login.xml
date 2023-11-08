@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".fragment.GoogleLoginFragment">
+
+    <LinearLayout
+        android:id="@+id/login_google_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/sns_login_rounded_big_btn"
+        android:backgroundTint="#f1f2f3">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/logo_google" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-37dp"
+            android:fontFamily="@font/apple_sd_gothic_neo_m"
+            android:gravity="center"
+            android:letterSpacing="-0.01"
+            android:text="구글로 간편로그인"
+            android:textColor="#191919"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+</FrameLayout>

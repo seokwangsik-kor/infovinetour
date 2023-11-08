@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_background"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="210dp">
+
+            <ImageView
+                android:id="@+id/update_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="-10dp"
+                android:padding="10dp"
+                android:src="@drawable/update_btn_close" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/white_round_background">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/login_334" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/update_ment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="29dp"
+                android:gravity="center"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:lineSpacingExtra="8sp"
+                android:text="최신버전이 있습니다."
+                android:textColor="#171717"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/update_ment_box"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/blue_round_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center"
+                        android:background="#21d59b" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:fontFamily="@font/apple_sd_gothic_neo_semibold"
+                        android:text="업데이트 사항"
+                        android:textColor="#171717"
+                        android:textSize="13dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/update_ment_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/apple_sd_gothic_neo_m"
+                    android:text=""
+                    android:textColor="#4e5867"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/update_app_ver"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:letterSpacing="-0.05"
+                android:text=""
+                android:textColor="#4e5867"
+                android:textSize="13dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/update_app_new_ver"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:letterSpacing="-0.05"
+                android:text=""
+                android:textColor="#4e5867"
+                android:textSize="13dp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="39.5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/update_cancle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/update_cancle_btn"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="@font/apple_sd_gothic_neo_m"
+                        android:gravity="center_horizontal"
+                        android:text="종료"
+                        android:textColor="#4e5867"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/update_btn_margin"
+                    android:layout_width="6dp"
+                    android:layout_height="40dp" />
+
+                <LinearLayout
+                    android:id="@+id/update_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/update_btn"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="@font/apple_sd_gothic_neo_m"
+                        android:gravity="center_horizontal"
+                        android:text="업데이트"
+                        android:textColor="#ffffff"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/update_deilay_day_layer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/update_bottom_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="15.5dp"
+                    android:background="#ededed" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="right">
+
+                    <CheckBox
+                        android:id="@+id/update_check_btn"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/terms_check_btn"
+                        android:button="@android:color/transparent"
+                        android:checked="false" />
+
+                    <TextView
+                        android:id="@+id/update_check_btn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-7dp"
+                        android:layout_marginBottom="-5dp"
+                        android:fontFamily="@font/apple_sd_gothic_neo_m"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="9sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="7일간 보지 않기"
+                        android:textColor="#4e5867"
+                        android:textSize="13dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.NomalAlertFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alert_nomal_title"
+                android:layout_width="match_parent"
+                android:layout_height="46.5dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:gravity="center"
+                android:text="알림"
+                android:textColor="#171717"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="11.5dp"
+                android:background="#f2f3f4" />
+
+            <TextView
+                android:id="@+id/alert_nomal_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="44.5dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#171717"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="44.5dp"
+                android:background="#f2f3f4" />
+
+            <LinearLayout
+                android:id="@+id/alert_nomal_confirm"
+                android:layout_width="133dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="13.5dp"
+                android:layout_marginBottom="13.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/nomal_cancle_btn"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:fontFamily="@font/apple_sd_gothic_neo_m"
+                    android:gravity="center_horizontal"
+                    android:text="확인"
+                    android:textColor="@color/main_color"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

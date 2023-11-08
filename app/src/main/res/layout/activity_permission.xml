@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PermissionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/cnt_bg_1"
+            android:gravity="center"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:letterSpacing="-0.05"
+                android:textColor="#171717"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="앱 사용을 위해 접근 권한을 허용해주세요." />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/apple_sd_gothic_neo_m"
+            android:letterSpacing="-0.05"
+            android:textColor="#4f5664"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:text="•정보통신망법 제22조의 2(접근권한에 대한 동의) 규정에 맞추어\n서비스에 꼭 필요한 항목만을 필수접근하고 있으며, 그 내용은 아래와 같습니다."/>
+        
+       <!-- <ImageView
+            android:layout_width="288dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="162dp"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/per_center_img"
+            />-->
+        <ImageView
+            android:layout_width="288dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="162dp"
+            android:layout_gravity="center"
+            android:background="@drawable/per_center_img"
+            />
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/apple_sd_gothic_neo_m"
+            android:textStyle="normal"
+            android:textSize="13dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#4f5664"
+            android:letterSpacing="-0.05"
+            android:text="•접근 권한 선택 항목은 관련 기능 이용시 동의가 필요하며\n비허용 시에도 해당 기능외 서비스는이용 가능 합니다"/>
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/apple_sd_gothic_neo_m"
+            android:textStyle="normal"
+            android:textSize="13dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:textColor="#4f5664"
+            android:letterSpacing="-0.05"
+            android:text="@string/per_ment"/>
+
+        <FrameLayout
+            android:id="@+id/permisson_confirm_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:background="@drawable/green_large_btn_round_background"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:lineSpacingExtra="3sp"
+                android:text="확인"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

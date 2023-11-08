@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/search_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_btn_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/s_core_dream_6"
+                android:gravity="center"
+                android:text="여행지 선택"
+                android:textColor="#171717"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_btn_back"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_edit_layer"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gray_small_round_background"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:gravity="center|left"
+                android:hint="여행 목적지를 검색해주세요."
+                android:singleLine="true"
+                android:textColor="#4f5664"
+                style="@style/editText"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:src="@drawable/ic_search" />
+
+            <!--<ImageView
+                android:id="@+id/search_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:src="@drawable/ic_close" />-->
+
+        </LinearLayout>
+
+        <!-- <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="#edeef0" />-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/search_word"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/search_word_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/s_core_dream_6"
+                            android:gravity="center"
+                            android:text="해외여행"
+                            android:textColor="#171717"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/search_word_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#4f5664" />
+
+                        <ImageView
+                            android:id="@+id/search_word_img1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#bebebe" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/search_korea"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/search_korea_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/s_core_dream_5_medium"
+                            android:gravity="center"
+                            android:text="국내여행"
+                            android:textColor="#bebebe"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/search_korea_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#4f5664"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/search_korea_img1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#bebebe" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="-1dp"
+                    android:background="#edeef0" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/search_tap"
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@color/white"
+                    app:tabBackground="@drawable/search_tab_background"
+                    app:tabGravity="start"
+                    app:tabIndicatorFullWidth="false"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMaxWidth="0dp"
+                    app:tabMode="scrollable"
+                    app:tabRippleColor="@android:color/transparent"
+                    app:tabSelectedTextColor="#57b918"
+                    app:tabTextAppearance="@style/Search_Tab_TextSize"
+                    app:tabTextColor="#6d7278" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/search_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/search_recyclerview_layer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="19.5dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#f6f6f6" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="94dp"
+                    android:src="@drawable/search_none" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="186dp"
+                    android:fontFamily="@font/s_core_dream_5_medium"
+                    android:text="검색 결과가 없습니다."
+                    android:textColor="#4f5664"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/search_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/search_layer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15.8dp"
+                    android:layout_marginRight="15.8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/s_core_dream_4"
+                        android:gravity="center|left"
+                        android:text="최근 선택한 여행지"
+                        android:textColor="#6d7278"
+                        android:textSize="13dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/search_save_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/s_core_dream_4"
+                        android:gravity="center"
+                        android:text="저장기능 끄기  "
+                        android:textColor="#bebebe"
+                        android:textSize="13dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/search_save_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/s_core_dream_4"
+                        android:gravity="center"
+                        android:text="|  전체삭제"
+                        android:textColor="#bebebe"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#f6f6f6" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/search_save_list_none"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="120dp"
+                        android:fontFamily="@font/s_core_dream_5_medium"
+                        android:gravity="center"
+                        android:text="최근 선택한 여행지가 없습니다."
+                        android:textColor="#bebebe"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/search_save_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="16dp"
+                        android:paddingRight="20dp"
+                        android:visibility="visible"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

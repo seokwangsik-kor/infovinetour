@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SystemCheckAlertFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alert_networkerr_title"
+                android:layout_width="match_parent"
+                android:layout_height="46.5dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:gravity="center"
+                android:text="시스템 점검 안내"
+                android:textColor="#171717"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="11.5dp"
+                android:background="#f2f3f4" />
+
+            <TextView
+                android:id="@+id/alert_systemcheck_top_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/apple_sd_gothic_neo_semibold"
+                android:letterSpacing="-0.05"
+                android:lineSpacingExtra="11sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="23.5dp"
+                android:text="서비스명를 이용해주셔서 감사합니다.\n고객님의 서비스 품질 향상을 위해 서버점검으로\n서비스가 불가피하게 제한됩니다."
+                android:textColor="#171717"
+                android:textSize="13dp"
+                android:textStyle="normal" />
+
+
+            <LinearLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/blue_round_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#21d59b" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:fontFamily="@font/apple_sd_gothic_neo_semibold"
+                        android:text="작업내용"
+                        android:textColor="#171717"
+                        android:textSize="13dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/alert_systemcheck_ment_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/apple_sd_gothic_neo_m"
+                    android:text=""
+                    android:textColor="#4f5664"
+                    android:textSize="13dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:gravity="center"
+                android:text="빠른 시간에 점검을 완료 하여 더욱 안정된 서비스로\n보답하겠습니다."
+                android:textColor="#171717"
+                android:textSize="13dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="23.5dp"
+                android:background="#f2f3f4" />
+
+            <LinearLayout
+                android:id="@+id/alert_systemcheck_confirm"
+                android:layout_width="133dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="13.5dp"
+                android:layout_marginBottom="13.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/nomal_cancle_btn"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:fontFamily="@font/apple_sd_gothic_neo_m"
+                    android:gravity="center_horizontal"
+                    android:text="확인"
+                    android:textColor="@color/main_color"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

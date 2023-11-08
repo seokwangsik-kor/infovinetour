@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="main_color">#1bc371</color>
+    <color name="permisson_bg">#66000000</color>
+    <color name="install_bg">#33000000</color>
+    <color name="terms_finish_btn_true">#ff5777</color>
+    <color name="terms_finish_btn_flase">#d1d1d1</color>
+    <color name="theme_txt_color">#171717</color>
+    <color name="theme_color_check">#e0ffcc</color>
+    <color name="transparent_bg">#00FFFFFF</color>
+
+
+    <!-- 달력 설정-->
+    <!--Background color-->
+    <color name="calendar_picker_bg">#00FFFFFF</color>
+
+    <color name="calendar_day_unselected_bg">#00000000</color>
+    <color name="calendar_day_selected_bg">@color/main_color</color>
+    <color name="calendar_day_range_selected_bg">#e0ffcc</color>
+
+    <!--Font color-->
+    <color name="calendar_day_disabled_font">#33010101</color>
+    <color name="calendar_day_weekend_font">#ff0000</color>
+    <color name="calendar_day_selected_font">#ffffff</color>
+    <color name="calendar_day_normal_font">#171717</color>
+
+    <color name="calendar_month_font">#171717</color>
+    <color name="calendar_week_font">#333333</color>
+
+</resources>

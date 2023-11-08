@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="13sp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/list_theme_layer"
+        android:layout_width="86sp"
+        android:layout_height="86sp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/list_theme_img"
+            android:layout_width="52sp"
+            android:layout_height="52sp"
+            android:src="@drawable/thema_img_1" />
+
+        <!--<FrameLayout
+            android:id="@+id/list_theme_btn_layer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/list_theme_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/list_theme_btn"
+                android:button="@android:color/transparent"
+                android:clickable="false" />-->
+
+            <TextView
+                android:id="@+id/list_theme_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/s_core_dream_5_medium"
+                android:text=""
+                android:textColor="#171717"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+       <!-- </FrameLayout>-->
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="60dp"
+	android:gravity="center_vertical">
+	<TextView
+		android:layout_marginLeft="24dp"
+		android:id="@+id/text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/apple_sd_gothic_neo_m"
+		android:textStyle="normal"
+		android:textSize="18sp"
+		android:textColor="#171717"
+		android:lineSpacingExtra="6sp"/>
+	<ImageView
+		android:id="@+id/check"
+		android:visibility="gone"
+		android:layout_marginRight="24dp"
+		android:layout_alignParentRight="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/btn_check_ss"/>
+</RelativeLayout>

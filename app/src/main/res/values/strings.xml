@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">infovinetour</string>
+    <string name="per_ment">•앱 접근권한 변경을 원하신다면 <b>휴대폰설정 > 애플리케이션 관리 > 서비스명 ></b> 앱권한에서 설정변경가능합니다</string>
+    <string name="kakao_native_key">c07f1ebe6f97920139b2d7c59c43d8dd</string>
+    <string name="kakao_key">kakaoc07f1ebe6f97920139b2d7c59c43d8dd</string>
+    <string name="naver_client_id">5uF_KMu6yztIdIDPpamF</string>
+    <string name="naver_client_secret">jD2T0E3OI1</string>
+    <string-array name="tel_list">
+        <item>SKT</item>
+        <item>KT</item>
+        <item>LG U+</item>
+        <item>알뜰폰</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.NomalAlertFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp"
+                    android:padding="20dp"
+                    android:src="@drawable/del_img"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/alert_city_sel_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/s_core_dream_6"
+                    android:gravity="center"
+                    android:text="출발 도시 지정"
+                    android:textColor="#171717"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/city_select_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp"
+                    android:padding="20dp"
+                    android:src="@drawable/del_img" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/s_core_dream_5_medium"
+                    android:text="광역시/도 선택"
+                    android:textColor="#171717"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="20dp"
+                    app:boxBackgroundColor="#f6f6f6"
+                    app:endIconDrawable="@drawable/btn_down_s">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/city_select_do"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gray_small_round_background"
+                        android:fontFamily="@font/s_core_dream_5_medium"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:singleLine="true"
+                        android:text="선택"
+                        android:textSize="15dp"
+                        android:textColor="#4f5664"
+                        android:textStyle="normal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/s_core_dream_5_medium"
+                    android:text="시/군/구 선택"
+                    android:textColor="#171717"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="20dp"
+                    app:boxBackgroundColor="#f6f6f6"
+                    app:endIconDrawable="@drawable/btn_down_s">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/city_select_si"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gray_small_round_background"
+                        android:fontFamily="@font/s_core_dream_5_medium"
+                        android:gravity="center|left"
+                        android:inputType="none"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:singleLine="true"
+                        android:text="선택"
+                        android:textSize="15dp"
+                        android:textColor="#4f5664"
+                        android:textStyle="normal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/city_select_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/city_select_confirm_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/terms_check_finish_btn"
+                    android:button="@android:color/transparent"
+                    android:clickable="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/s_core_dream_7_extrabold"
+                    android:text="도시 직접 지정 완료"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
